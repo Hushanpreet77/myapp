@@ -24,7 +24,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.blue),
+      appBar: AppBar(
+        backgroundColor: Colors.blue;
+        title: FlutterLogo(size: 45),
+      ),
       drawer: Drawer(),
       body: Container(color: Colors.white),
       bottomNavigationBar: BottomAppBar(),
