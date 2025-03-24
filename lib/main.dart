@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Mainapp());
+  runApp(const MainApp());
 }
 
-class Mainapp extends StatelessWidget {
-  const Mainapp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +25,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue;
-        title: FlutterLogo(size: 45),
+        backgroundColor: Colors.blue,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [FlutterLogo(size: 45)],
+        ),
       ),
       drawer: Drawer(),
       body: Container(color: Colors.white),
